@@ -44,7 +44,7 @@ function Carusel({ rotation }) {
     });
   }, [rotation])
   return (
-    <div className="carusel relative w-[900px] h-[900px] rounded-full transition-transform duration-[700ms]" style={{ background: gradients[index] }} ref={circleRef}>
+    <div className="carusel relative w-[900px] h-[900px] rounded-full transition-transform duration-[700ms] transition-colors duration-700" style={{ background: gradients[index] }} ref={circleRef}>
       <div className={`card absolute w-[300px] h-[300px] rounded-full flex items-center justify-center text-3xl font-bold transition-transform duration-700
         ${Math.floor(activeIndex) === 2 ? "active" : "default"}`}>
         <img src={OrangeWatch} className="w-[300px]" alt="" />

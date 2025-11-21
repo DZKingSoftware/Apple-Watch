@@ -10,25 +10,29 @@ function WatchDec ({ onRotate }) {
             first: "White",
             second: "Gray",
             color1: "#DBDBD8",
-            color2: "#6b7280"
+            color2: "#6b7280",
+            btnColor: 'grey'
         },
         {
             first: "Blue",
             second: "Gray",
             color1: "blue",
-            color2: "#6b7280"
+            color2: "#6b7280",
+            btnColor: 'blue',
         },
         {
             first: "Orange",
             second: "Gray",
             color1: "#FFA136",
-            color2: "#6b7280"
+            color2: "#6b7280",
+            btnColor: 'orange'
         },
         {
             first: "Green",
             second: "Gray",
             color1: "green",
-            color2: "#6b7280"
+            color2: "#6b7280",
+            btnColor: 'green'
         }
     ]
 
@@ -51,7 +55,9 @@ function WatchDec ({ onRotate }) {
             <div>
                 <p className="text-1xl my-3">Select Color</p>
                 <Controls onRotate={handleButton} activeButton={activeButton} />
-                <button className="rounded-4xl bg-blue-600 px-5.5 py-3 text-white my-4 cursor-pointer hover:bg-transparent hover:text-blue-500 transition-colors duration-700 hover:border-blue-500 border-3">Buy Now</button>
+                <button className="rounded-4xl bg-blue-600 px-5.5 py-3 text-white my-4 cursor-pointer hover:bg-transparent  transition-colors duration-700 hover:border-blue-500 border-3"
+                style={{ backgroundColor: watchName[activeButton].btnColor }}
+                >Buy Now</button>
             </div>
         </div>
     )

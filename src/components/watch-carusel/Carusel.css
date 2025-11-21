@@ -1,0 +1,11 @@
+.active {
+    width: 300px !important;
+    height: 300px !important;
+    backdrop-filter: blur(0px);
+}
+.default {
+    width: 200px !important;
+    filter: blur(2px);
+    opacity: 1;
+    z-index: 10;
+}

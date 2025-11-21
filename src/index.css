@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'gc-epicpro';
+    src: url('./assets/gc-epicpro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
